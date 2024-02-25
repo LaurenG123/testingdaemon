@@ -1,0 +1,14 @@
+pytests/
+│
+├── mydaemon/
+│   ├── __init__.py
+│   └── daemon.py
+│
+├── tests/
+│   ├── test_compare_csv.py
+│   ├── test_compare_sql.py
+│   ├── test_check_s3_connection.py
+│   └── test_check_csv_uploaded_to_s3.py
+│
+├── setup.py
+└── requirements.txt
