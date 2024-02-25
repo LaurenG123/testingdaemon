@@ -1,13 +1,17 @@
-# setup.py
 from setuptools import setup
 
 setup(
-    name='pytest_daemon',
+    name='test_daemon',
     version='0.1',
-    packages=['pytest_daemon'],
+    packages=['test_daemon'],
+    install_requires=[
+        'pytest',
+        # Add any other dependencies required for your test daemon
+    ],
     entry_points={
         'console_scripts': [
-            'pytest_daemon=pytest_daemon.daemon:main',
+            'test_daemon=test_daemon.daemon:run_tests_as_daemon',
         ],
     },
 )
+
